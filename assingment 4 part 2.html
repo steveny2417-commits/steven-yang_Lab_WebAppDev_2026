@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+    <body>
+        <div class="kartu">
+            <h2 is ="judul kartunya">judul awal</h2>
+            <p class ="deskripsi">deskripsi awal</p>
+            <button id="BTN-BERUBAH">ubah konten</button>
+        </div>
+
+        <script>
+            const btn = document.getElementById("BTN-BERUBAH");
+      const judul = document.querySelector("h2");
+      const deskripsi = document.querySelector(".deskripsi");
+      btn.addEventListener("click", () => {
+        judul.textContent = "Judul Sudah Diubah!";
+        deskripsi.textContent =
+          "Konten ini diganti oleh JavaScript saat tombol diklik.";
+      });
+        </script>
+    </body>
