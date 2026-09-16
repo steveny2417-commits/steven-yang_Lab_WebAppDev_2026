@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TokoLab - Perlengkapan Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="TokoLab home"><span class="brand-mark">TL</span><span>TokoLab<small>Digital essentials</small></span></a>
+      <nav class="main-nav" aria-label="Navigasi utama"><a class="active" href="#produk">Produk</a><a href="#tentang">Tentang kami</a><a href="#bantuan">Bantuan</a></nav>
+      <div class="header-actions"><button class="icon-button" id="theme-toggle" aria-label="Ganti tema"><span class="icon">☼</span></button><button class="cart-button" id="cart-jump" aria-label="Buka keranjang">Keranjang <span id="cart-count">0</span></button></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero"><div><p class="eyebrow">PRAKTIS UNTUK HARI INI</p><h1>Teknologi yang<br><em>terasa tepat.</em></h1><p class="hero-copy">Temukan perangkat pilihan untuk bekerja, bermain, dan menciptakan lebih banyak hal.</p><a class="primary-button" href="#produk">Jelajahi produk <span>↗</span></a></div><div class="hero-object" aria-label="Ilustrasi laptop dan headphone"><div class="sun"></div><div class="laptop"><div class="screen">TL<span>+</span></div><div class="base"></div></div><div class="headphone">◯</div></div></section>
+    <section class="shop-layout" id="produk"><div class="catalog"><div class="section-heading"><div><p class="eyebrow">KOLEKSI PILIHAN</p><h2>Semua produk</h2></div><span class="product-total" id="product-total"></span></div><div class="toolbar"><label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Cari nama produk..." aria-label="Cari produk"></label><select id="category-filter" aria-label="Filter kategori"><option value="all">Semua kategori</option><option value="Aksesoris">Aksesoris</option><option value="Audio">Audio</option><option value="Penyimpanan">Penyimpanan</option><option value="Display">Display</option></select><select id="sort-select" aria-label="Urutkan produk"><option value="default">Urutkan: Default</option><option value="low">Harga terendah</option><option value="high">Harga tertinggi</option><option value="name">Nama A-Z</option></select></div><div class="product-grid" id="product-grid"></div></div><aside class="cart-panel" id="cart-panel"><div class="cart-title"><div><p class="eyebrow">PESANAN ANDA</p><h2>Keranjang <span id="cart-title-count">(0)</span></h2></div><button class="close-cart" id="close-cart" aria-label="Tutup keranjang">×</button></div><div id="cart-items" class="cart-items"><div class="empty-cart"><span>＋</span><p>Keranjang masih kosong.</p><small>Tambahkan produk untuk mulai belanja.</small></div></div><div class="cart-footer"><div class="shipping-note">Belanja <strong>Rp300.000</strong> lagi untuk gratis ongkir.<div class="progress-track"><span id="shipping-progress"></span></div></div><div class="voucher-row"><input id="voucher-input" placeholder="Kode voucher"><button id="voucher-button">Pakai</button></div><div class="summary"><div>Subtotal <strong id="subtotal">Rp0</strong></div><div>Diskon <strong id="discount">-Rp0</strong></div><div>Ongkir <strong id="shipping">Gratis</strong></div><div class="summary-total">Total <strong id="total">Rp0</strong></div></div><button class="checkout-button" id="checkout-button" disabled>Checkout <span>→</span></button><p class="cart-message" id="cart-message">Pesanan 1 barang senilai Rp450.000 berhasil dibuat.</p></div></aside></section>
+  </main>
+
+  <footer class="site-footer" id="tentang"><strong>TokoLab</strong><span>Barang baik untuk kerja yang lebih baik.</span><span id="bantuan">© 2026 TokoLab</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
